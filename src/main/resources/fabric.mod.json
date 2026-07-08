@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "disc-preview",
+	"version": "${version}",
+	"name": "Disc Preview",
+	"description": "Preview Minecraft music discs by hovering over them in inventories.",
+	"authors": [
+		"krakenk0"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/discpreview/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.krakenk0.discpreview.Discpreview"
+		],
+		"client": [
+			"com.krakenk0.discpreview.DiscPreviewClient"
+		]
+	},
+	"mixins": [
+		"discpreview.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

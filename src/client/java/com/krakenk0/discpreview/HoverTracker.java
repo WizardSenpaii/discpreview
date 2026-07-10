@@ -18,6 +18,10 @@ public class HoverTracker {
 
     public static void tick() {
 
+        if (!DiscPreviewConfig.enabled) {
+            return;
+        }
+
         Minecraft client = Minecraft.getInstance();
 
         if (!(client.screen instanceof AbstractContainerScreen<?> screen)) {

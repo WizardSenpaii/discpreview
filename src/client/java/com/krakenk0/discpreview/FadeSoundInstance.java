@@ -54,7 +54,7 @@ public class FadeSoundInstance extends AbstractTickableSoundInstance {
             this.volume = Math.min(
                     1.0F,
                     (float) fadeTicks / FADE_TIME
-            );
+            ) * (DiscPreviewConfig.volume / 100.0F);
 
         } else {
 
@@ -63,7 +63,7 @@ public class FadeSoundInstance extends AbstractTickableSoundInstance {
             this.volume = Math.max(
                     0.0F,
                     (float) fadeTicks / FADE_TIME
-            );
+            ) * (DiscPreviewConfig.volume / 100.0F);
 
             if (fadeTicks <= 0) {
                 super.stop();

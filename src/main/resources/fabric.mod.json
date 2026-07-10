@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "disc-preview",
-	"version": "${version}",
+	"version": "1.0.1",
 	"name": "Disc Preview",
 	"description": "Preview Minecraft music discs by hovering over them in inventories.",
 	"authors": [
 		"krakenk0"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/disc-preview",
+		"sources": "https://github.com/WizardSenpaii/discpreview"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/discpreview/icon.png",
@@ -20,7 +20,10 @@
 		],
 		"client": [
 			"com.krakenk0.discpreview.DiscPreviewClient"
-		]
+		],
+		"modmenu": [
+			"com.krakenk0.discpreview.DiscPreviewModMenu"
+			]
 	},
 	"mixins": [
 		"discpreview.mixins.json"

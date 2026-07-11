@@ -84,7 +84,7 @@ public class HoverTracker {
             }
 
 
-            // 12 ticks = 0.6 seconds
+            // 1 tick = 0.05 sec, 6  ticks = 0.3 sec, 12 ticks = 0.6 sec, 15 ticks = 0.75 sec, 20 ticks = 1 sec.
             if (hoverTicks >= 12 &&
                     !ItemStack.isSameItemSameComponents(stack, currentDisc)) {
 
